@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="#" class="Logo">Logo</a>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Sobre</a></li>
+          <li><a href="#">Contatos</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="container">
+      <div class="div-form">
+        <h1>Login</h1>
+        <form class="form">
+          <label for="name">Nome:</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder=" Digite seu nome"
+            required
+          />
+          <label for="email">Email</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder=" Digite seu email"
+            required
+          />
+          <label for="data-nasc">Data de Nascimento</label>
+          <input type="date" name="date" id="date" required />
+          <label for="genero" class="genero">Gênero</label>
+          <div class="div-generos">
+            <label for="masc" class="genero">
+              <input
+                type="checkbox"
+                name="genero"
+                class="genero"
+                id="genero-masc"
+              />
+              Masculino
+            </label>
+            <label for="fem" class="genero">
+              <input
+                type="checkbox"
+                name="genero"
+                class="genero"
+                id="genero-fem"
+              />
+              Feminino
+            </label>
+          </div>
+
+          <input type="submit" value="Enviar" id="button" />
+        </form>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
